@@ -26,7 +26,7 @@ WORKDIR /var/www/html
 COPY . /var/www/html
 
 # Set permissions for Laravel
-RUN chown -R www-data:var/www/html /var/www/html \
+RUN chown -R www-data:www-data /var/www/html \
     && find /var/www/html -type f -exec chmod 644 {} \; \
     && find /var/www/html -type d -exec chmod 755 {} \; \
     && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
