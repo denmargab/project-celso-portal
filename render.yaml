@@ -1,6 +1,6 @@
 services:
   - type: web
-  - name: project-celso
+    name: project-celso
     env: php
     plan: free
     buildCommand: "composer install --no-dev --optimize-autoloader && php artisan config:cache && php artisan route:cache"
