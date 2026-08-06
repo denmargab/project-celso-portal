@@ -74,7 +74,7 @@
             <!-- Category Switcher Buttons -->
             <div class="flex flex-wrap justify-center gap-4">
                 <button onclick="switchTab('applications')" id="btn-applications" class="tab-btn px-6 py-3 rounded-xl font-semibold text-sm transition bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 border border-indigo-500">
-                    Applications ({{ count($applications) }})
+                    Applications ({{ count($applications) + 1 }})
                 </button>
                 <button onclick="switchTab('services')" id="btn-services" class="tab-btn px-6 py-3 rounded-xl font-semibold text-sm transition bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800">
                     Services ({{ count($services) }})
@@ -89,6 +89,22 @@
             <!-- 1. APPLICATIONS -->
             <div id="content-applications" class="tab-content space-y-4">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    
+                    <!-- CFFNS Digital Library Custom Card -->
+                    <div class="bg-slate-900/70 backdrop-blur border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/50 transition flex flex-col justify-between group shadow-xl">
+                        <div>
+                            <div class="w-12 h-12 bg-slate-800/80 border border-indigo-500/30 rounded-full flex items-center justify-center mb-4 overflow-hidden p-1 group-hover:scale-110 transition shadow-md">
+                                <span class="text-indigo-400 font-bold font-mono text-xs">DL</span>
+                            </div>
+                            <h3 class="font-semibold text-white text-base">CFFNS Digital Library</h3>
+                            <p class="text-xs text-slate-400 mt-1">Access digital readings, instructional assets, and library materials.</p>
+                        </div>
+                        <a href="https://jcrapsing.my.canva.site/digital-library-cffns" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center text-xs font-mono font-medium text-indigo-400 hover:text-indigo-300">
+                            Launch Module &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Database Applications -->
                     @foreach($applications as $app)
                         <div class="bg-slate-900/70 backdrop-blur border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/50 transition flex flex-col justify-between group shadow-xl">
                             <div>
