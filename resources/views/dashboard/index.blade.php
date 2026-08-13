@@ -74,7 +74,7 @@
             <!-- Category Switcher Buttons -->
             <div class="flex flex-wrap justify-center gap-4">
                 <button onclick="switchTab('applications')" id="btn-applications" class="tab-btn px-6 py-3 rounded-xl font-semibold text-sm transition bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 border border-indigo-500">
-                    Applications ({{ count($applications) + 1 }})
+                    Applications ({{ count($applications) + 2 }})
                 </button>
                 <button onclick="switchTab('services')" id="btn-services" class="tab-btn px-6 py-3 rounded-xl font-semibold text-sm transition bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800">
                     Services ({{ count($services) }})
@@ -90,16 +90,30 @@
             <div id="content-applications" class="tab-content space-y-4">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     
-                    <!-- CFFNS Digital Library Custom Card -->
+                    <!-- e-SF9 Generator Custom Card -->
                     <div class="bg-slate-900/70 backdrop-blur border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/50 transition flex flex-col justify-between group shadow-xl">
                         <div>
                             <div class="w-12 h-12 bg-slate-800/80 border border-indigo-500/30 rounded-full flex items-center justify-center mb-4 overflow-hidden p-1 group-hover:scale-110 transition shadow-md">
-                                <span class="text-indigo-400 font-bold font-mono text-xs">DL</span>
+                                <span class="text-indigo-400 font-bold font-mono text-xs">SF9</span>
                             </div>
-                            <h3 class="font-semibold text-white text-base">CFFNS Digital Library</h3>
-                            <p class="text-xs text-slate-400 mt-1">Access digital readings, instructional assets, and library materials.</p>
+                            <h3 class="font-semibold text-white text-base">e-SF9 Generator</h3>
+                            <p class="text-xs text-slate-400 mt-1">Generate and manage student progress report cards securely.</p>
                         </div>
-                        <a href="https://jcrapsing.my.canva.site/digital-library-cffns" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center text-xs font-mono font-medium text-indigo-400 hover:text-indigo-300">
+                        <a href="https://cffnhs-sf9.test/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center text-xs font-mono font-medium text-indigo-400 hover:text-indigo-300">
+                            Launch Module &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Assessment Performance Tracker Custom Card -->
+                    <div class="bg-slate-900/70 backdrop-blur border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/50 transition flex flex-col justify-between group shadow-xl">
+                        <div>
+                            <div class="w-12 h-12 bg-slate-800/80 border border-indigo-500/30 rounded-full flex items-center justify-center mb-4 overflow-hidden p-1 group-hover:scale-110 transition shadow-md">
+                                <span class="text-indigo-400 font-bold font-mono text-xs">APT</span>
+                            </div>
+                            <h3 class="font-semibold text-white text-base">Assessment Performance Tracker</h3>
+                            <p class="text-xs text-slate-400 mt-1">Track and analyze learner test scores and performance assessments.</p>
+                        </div>
+                        <a href="https://cffnhs_exam_tracker.test/public" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center text-xs font-mono font-medium text-indigo-400 hover:text-indigo-300">
                             Launch Module &rarr;
                         </a>
                     </div>
